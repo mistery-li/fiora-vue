@@ -1,17 +1,15 @@
 import { defineComponent } from 'vue';
-import { RouterLink, RouterView } from 'vue-router';
+import Sidebar from './views/Sidebar/Sidebar';
 
 export default defineComponent({
   name: 'App',
   setup() {
-    return () => (
-      <>
-        <div id="nav">
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
+    return () => {
+      return (
+        <div class="fiora-main">
+          <Sidebar />
         </div>
-        <RouterView />
-      </>
-    );
+      );
+    };
   },
 });

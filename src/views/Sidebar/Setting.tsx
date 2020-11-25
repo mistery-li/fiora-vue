@@ -1,12 +1,11 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'Login',
+  name: 'Setting',
+
   setup() {
-    return () => (
-      <>
-        <div>登陆组件</div>
-      </>
-    );
+    return () => {
+      return <div>Setting</div>;
+    };
   },
 });
