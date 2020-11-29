@@ -7,9 +7,9 @@
 </template>
 
 <script lang="ts">
-import Sidebar from '../src/views/Sidebar/Sidebar.vue';
+import Sidebar from '/views/Sidebar/Sidebar.vue';
 import FunctionBarAndLinkmanList from '../src/views/FunctionBarAndLinkmanList/FunctionBarAndLinkmanList.vue';
-import Chat from '../src/views/Chat/Chat.vue';
+import Chat from '/views/Chat/Chat.vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'App',
@@ -21,4 +21,5 @@ export default defineComponent({
 });
 </script>
 
-<style></style>
+<style lang="sass" scoped>
+</style>
