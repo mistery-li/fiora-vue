@@ -1,11 +1,21 @@
-import { defineComponent } from 'vue';
+import { defineComponent, toRefs } from 'vue';
+
+import Modal from 'ant-design-vue';
 
 export default defineComponent({
   name: 'About',
 
-  setup() {
+  setup(props) {
+    const { visible } = toRefs(props);
     return () => {
-      return <div>关于</div>;
+      return (
+        <Modal title="关于" visible={visible.value}>
+          <div>作者主页</div>
+          <div>
+            <a>https:github.com</a>
+          </div>
+        </Modal>
+      );
     };
   },
 });
